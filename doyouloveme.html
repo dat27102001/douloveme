@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        #no{
+            position: absolute;
+            left: 100px;
+            top : 100px;
+        }
+    </style>
+<body>
+    <h2> Do You Love Me ?</h2>
+    <title> Simple Table</title>
+    <table style="border-collapse: collapse" width="100px"> </table>
+    <input type="button" value="Yes" onclick="showYes()" >
+    <input type="button" value="No" id="no" onmouseover="showNo()"  >
+<script>
+    function showYes() {
+        alert('<3')
+    }
+    function showNo() {
+        let leftValue = Math.floor(Math.random()*innerHeight)
+        let topValue = Math.floor(Math.random()*innerHeight);
+        document.getElementById("no").style.left = leftValue+"px";
+        document.getElementById("no").style.top = topValue + "px";
+    }
+</script>
+</body>
+</html>
